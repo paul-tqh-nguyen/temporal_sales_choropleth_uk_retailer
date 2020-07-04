@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Temporal Choropleth Map of U.K. Retailer Sales</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+  </head>
+  <body>
+    <div id="help-display">
+      <div id="help-display-text-container">
+	<div id="help-display-text">
+	  <h3>Temporal Choropleth Map of U.K. Retailer Sales</h3>
+	  <p>This is a <a href="https://en.wikipedia.org/wiki/Choropleth_map" target="_blank">choropleth map</a> reflecting the sames of an anonymous U.K. retailer. The data comes from the <a target="_blank" href="https://www.kaggle.com/carrie1/ecommerce-data">U.S. Bureau of Transportation Statistics</a>.</p>
+	  <h3 id="close-help-button" onclick="toggleHelp()"><a>Go to Map</a></h3>
+	</div>
+      </div>
+    </div>
+    <div id="main-display" class="show">
+      <svg id="choropleth-svg"></svg>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

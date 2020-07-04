@@ -1,0 +1,8 @@
+name: choropleth
+dependencies:
+  - python=3.7
+  - pandas
+  - tqdm
+  - pip
+  - pip:
+    - pandarallel
