@@ -5,20 +5,57 @@
     <meta charset="utf-8">
     <title>Temporal Choropleth Map of U.K. Retailer Sales</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://d3js.org/d3.v5.js"></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
   </head>
   <body>
-    <div id="help-display">
+    <a id="toggle-help-button" onclick="toggleHelp()"><i class="fa">&#xf059;</i></a>
+    <div id="help-display" class="show">
       <div id="help-display-text-container">
 	<div id="help-display-text">
 	  <h3>Temporal Choropleth Map of U.K. Retailer Sales</h3>
-	  <p>This is a <a href="https://en.wikipedia.org/wiki/Choropleth_map" target="_blank">choropleth map</a> reflecting the sames of an anonymous U.K. retailer. The data comes from the <a target="_blank" href="https://www.kaggle.com/carrie1/ecommerce-data">U.S. Bureau of Transportation Statistics</a>.</p>
+	  <p>
+	    This is a temporal <a href="https://en.wikipedia.org/wiki/Choropleth_map" target="_blank">choropleth map</a> reflecting the sames of an anonymous U.K. retailer over 2011.
+	  </p>
+	  <p>
+	    The data can be found <a href="https://www.kaggle.com/carrie1/ecommerce-data" target="_blank">here</a>.
+	  </p>
+	  <p>
+	  </p>
+	  <p>
+	  </p>
+	  <p>
+	  </p>
+	  <p>
+	  </p>
+	  <p>
+	    Feel free to <a target="_blank" href="https://paul-tqh-nguyen.github.io/about/#contact">reach out</a> for help or report problems or make suggestions for improvement.
+	  </p>
+	  <h3>Usage</h3>
+	  <p>
+	    Use the slider at at the bottom to select a date.
+	  </p>
+	  <p>
+	    Hover over a country to show the sales information for the country in a tooltip.
+	  </p>
+	  <p>
+	    The sales information reveals sales to date, number of unique customers to date, etc. 
+	  </p>
+	  <p>
+	    Grey countries are countries where no purchases took place.
+	  </p>
+	  <p>
+	    White countries denote a country that have made purchases but none to date. Countries with more revenue to date are shown in green.
+	  </p>
+	  <p>
+	    Use the play/pause button to have the slider automatically progress over time. Hover-over tooltips are updated accordingly. 
+	  </p>
 	  <h3 id="close-help-button" onclick="toggleHelp()"><a>Go to Map</a></h3>
 	</div>
       </div>
     </div>
-    <div id="main-display" class="show">
+    <div id="main-display">
       <svg id="choropleth-svg"></svg>
     </div>
     <script src="index.js"></script>
