@@ -2,7 +2,7 @@
 
 This is a temporal [choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) reflecting the sames of an anonymous U.K. retailer over 2011.
 
-A live demo can be found [here](https://paul-tqh-nguyen.github.io/temporal_sales_choropleth_uk_retailer/).
+A live demo can be found at https://paul-tqh-nguyen.github.io/temporal_sales_choropleth_uk_retailer/ .
 
 The data can be found  [here](https://www.kaggle.com/carrie1/ecommerce-data).
 
