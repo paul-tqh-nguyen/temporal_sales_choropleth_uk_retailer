@@ -29,7 +29,6 @@ const choroplethMain = () => {
     
     const geoJSONLocation = './data/processed_data.geojson';
 
-    const plotContainer = document.getElementById('main-display');
     const svg = d3.select('#choropleth-svg');
     const landMassesGroup = svg.append('g').attr('id', 'land-masses-group');
     const toolTipGroup = svg.append('g').attr('id', 'tool-tip-group');
