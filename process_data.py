@@ -1,7 +1,15 @@
-#!/usr/bin/python3
-'#!/usr/bin/python3 -OO'
+#!/usr/bin/python3 -OO
 
 '''
+
+This file contains utilities for unifying geoJSON data with tabular sales data in a way fit for visualization. 
+
+Sections:
+* Imports
+* Globals
+* Data Processing
+* Driver
+
 '''
 
 # @todo update doc string
@@ -50,10 +58,6 @@ class CustomEncoder(json.JSONEncoder):
             return obj.isoformat()
         else:
             return super(CustomEncoder, self).default(obj)
-
-###################
-# Data Processing #
-###################
 
 def clean_ecommerce_data(ecommerce_df: pd.DataFrame) -> pd.DataFrame:
     ecommerce_df.InvoiceDate = pd.to_datetime(ecommerce_df.InvoiceDate, format='%m/%d/%Y %H:%M').dt.date
