@@ -6,7 +6,7 @@ A live demo can be found at https://paul-tqh-nguyen.github.io/temporal_sales_cho
 
 The data can be found  [here](https://www.kaggle.com/carrie1/ecommerce-data).
 
-Feel free to  [reach out](https://paul-tqh-nguyen.github.io/about/#contact)  for help or report problems or make suggestions for improvement!
+Feel free to  [reach out](https://paul-tqh-nguyen.github.io/about/#contact) for help or to report problems or make suggestions for improvement!
 
 ### Tools Used
 
